@@ -1,0 +1,310 @@
+/* reset */
+*{
+margin: 0;
+padding: 0;
+list-style: none;
+text-decoration: none;
+border: none;
+outline: none;
+}
+/*Inicio de css*/
+
+/*BODY*/
+body{
+  font-family: 'Reem Kufi', sans-serif;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 50% 20%;
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+  justify-content: center;
+}
+
+/*HEADER*/
+header{
+grid-area: header;
+background-color:  rgba(17, 85, 102, 0.514);
+background-image: url(../Proyecto/IMAGENES/Fondo.jpg);
+background-size:cover;
+background-position: center;
+text-decoration: none;
+list-style: none;
+border-bottom:solid;
+border-color: rgba(17, 85, 102,1);  
+border-width: thin;
+height: 350px; 
+}
+
+/*NAV*/
+
+nav ul
+{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding-left: 5.2%;
+}
+
+nav ul li
+{
+font-size: 30px;
+font-weight:900;
+}
+
+a:link 
+{
+text-decoration: none;  
+color: rgb(2, 79, 99);
+}
+
+a:visited 
+{
+text-decoration: none;  
+color:  rgb(2, 79, 99); 
+}
+
+nav ul li:hover
+{
+  background-color: white;  
+  transform: translate(4px,4px);
+}
+
+/*MAIN*/
+main{
+font-family: 'Reem Kufi', sans-serif;
+grid-area: main;
+background-color: white;
+}
+
+li
+{
+    color:black;
+    font-size: 15px;  
+    list-style: none;
+    font-weight: 500;
+}
+
+/*FOOTER*/
+footer{
+font-family: 'Reem Kufi', sans-serif;
+background-color: rgba(2, 68, 85, 0.767);
+grid-area: footer;
+display: grid;
+grid-template-columns: 25% 25% 25% 25%;
+grid-template-rows: 90% 10%;
+grid-template-areas: "Horarios Seguinos Contacto Mapa"
+                     "Derechos Derechos Derechos Derechos";
+height: 250px;
+}
+
+.Horarios
+{
+  list-style: none;
+  font-weight: 500;
+  grid-area: Horarios;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-right: solid;
+  border-right-width: thin;
+  border-right-color: rgba(3, 60, 75, 0.733);
+  }
+
+
+.Seguinos
+{ 
+  list-style: none;
+  font-weight: 500;
+  grid-area: Seguinos;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-right: solid;
+  border-right-width: thin;
+  border-right-color: rgba(3, 60, 75, 0.733);
+  }
+
+.Contacto
+{ 
+  list-style: none;
+  font-weight: 500;
+  grid-area: Contacto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-right: solid;
+  border-right-width: thin;
+   border-right-color: rgba(3, 60, 75, 0.733);
+  }
+
+.Mapa
+{
+  margin-top: 15px;
+  margin-left: 15px;
+  grid-area: Mapa;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Derechos 
+{
+color: black;
+font-size: 10px; 
+grid-area: Derechos;
+justify-self: end;
+align-self: center;
+}
+
+footer H4
+{
+color:black;
+font-size: 15px;
+text-transform: uppercase;
+}
+
+footer li{
+  color:black;
+}
+
+/*TABLE*/
+label
+{
+color: black;
+font-size: 15px;
+font-style: italic;
+}
+
+ table
+{
+margin-top: 30px;
+margin-left: 30px;
+margin-bottom: 30px;
+padding: 10px;
+border-style: ridge;
+border-width:medium;  
+font-weight: 200;
+text-align: center;
+}
+
+ fieldset
+{
+border-top: dotted ; 
+border-bottom: dotted;   
+}
+
+ textarea
+{
+border: ridge; 
+}
+
+/*GRID PATISSERIE*/
+.GridPatisserie{
+  height: 100%;
+  width: 100%;
+  font-family: 'Reem Kufi', sans-serif;
+  line-height: 1,6;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2% 25% 25% 24% 24% ;
+  grid-template-areas: "Acompañamiento Acompañamiento"
+                       "Dulce FotoDulce"
+                       "FotoSalado Salado"
+                       "Saludable FotoSaludable"
+                       "FotoBrunch Brunch";
+  justify-content: center;
+
+}
+
+.GridPatisserie h4{
+  grid-area: Acompañamiento;
+  text-align: center;
+  font-weight:bold;
+  font-size: large;
+  margin-left: 13%;
+  margin-right: 13%;
+  margin-top: 1%;
+  color: rgb(2, 64, 80); 
+  border-bottom: solid;
+  border-bottom-color: rgba(223, 90, 13, 0.877); 
+  border-bottom-width: thin;
+}
+
+.Dulce{
+grid-area: Dulce;
+text-align: center;
+line-height: 2;
+display: block;
+padding-top: 10%;
+
+}
+
+.FotoDulce{
+grid-area: FotoDulce;
+padding-left: 15%;
+padding-top:5%;
+padding-bottom: 5%;
+}
+
+.FotoDulce img:hover{
+transform: scale(1.1,1.1);
+}
+
+.Salado{
+grid-area: Salado;
+text-align: center;
+line-height: 2;
+padding-top: 20%;
+}
+
+.FotoSalado{
+grid-area: FotoSalado;
+padding-left: 15%;
+padding-top:5%;
+padding-bottom: 5%;
+}
+
+.FotoSalado img:hover{
+transform: scale(1.1,1.1);
+}
+
+.Saludable
+{
+grid-area: Saludable;
+margin: 20%;
+padding-top: 8%;
+line-height: 3;
+text-align: center;
+}
+
+.FotoSaludable{
+grid-area: FotoSaludable;
+padding-left: 15%;
+padding-top:5%;
+padding-bottom: 5%;
+}
+
+.FotoSaludable img:hover{
+transform: scale(1.1,1.1);
+}
+
+.FotoBrunch{
+grid-area: FotoBrunch;
+padding-left: 15%;
+padding-top:3%;
+padding-bottom: 5%;
+}
+
+.FotoBrunch img:hover{
+transform: scale(1.1,1.1);
+}
+
+.Brunch{
+grid-area: Brunch;
+margin: 20%;
+padding-top: 8%;
+line-height: 3;
+text-align: center;
+font-weight: bold;
+}
